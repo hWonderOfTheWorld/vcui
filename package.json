@@ -22,7 +22,7 @@
     "platforms"
   ],
   "scripts": {
-    "install": "node -e \"console.log('script started at: %s', Date())\"",
+    "installp": "node -e \"console.log('script started at: %s', Date())\"",
     "clean": "lerna run clean",
     "nuke": "yarn clean && rimraf node_modules",
     "prepare": "husky install",
