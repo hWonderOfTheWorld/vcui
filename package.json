@@ -22,6 +22,8 @@
     "platforms"
   ],
   "scripts": {
+    "lerna": "lerna",
+    "bootstrap:ci": "yarn --ignore-scripts --silent && lerna bootstrap -- --ignore-scripts && yarn build",
     "installp": "node -e \"console.log('script started at: %s', Date())\"",
     "clean": "lerna run clean",
     "nuke": "yarn clean && rimraf node_modules",
