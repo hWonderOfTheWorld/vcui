@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="https://ebpto.com/favicon.png" />
         <title>EBPTO Verified Owner Credentials</title>
         {facebookSdkScript}
       </Head>
