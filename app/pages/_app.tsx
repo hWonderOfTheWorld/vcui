@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <title>Gitcoin Passport</title>
+        <title>EBPTO Verified Owner Credentials</title>
         {facebookSdkScript}
       </Head>
       <SelfIdProvider

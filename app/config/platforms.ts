@@ -21,29 +21,6 @@ export const getPlatformSpec = (platformName: string): PlatformSpec | undefined 
 
 export const PLATFORMS: PlatformSpec[] = [
   {
-    icon: "./assets/gitcoinStampIcon.svg",
-    platform: "Gitcoin",
-    name: "Gitcoin Grants",
-    description: "Connect with Github to verify with your Gitcoin account.",
-    connectMessage: "Connect Account",
-  },
-  {
-    icon: "./assets/gtcPossessionStampIcon.svg",
-    platform: "GTC",
-    name: "GTC",
-    description: "GTC possession verification",
-    connectMessage: "Verify Account",
-    isEVM: true,
-  },
-  {
-    icon: "./assets/gtcStakingLogoIcon.svg",
-    platform: "GtcStaking",
-    name: "GTC Staking",
-    description: "Connect to passport to verify your staking amount.",
-    connectMessage: "Verify amount",
-    isEVM: true,
-  },
-  {
     icon: "./assets/twitterStampIcon.svg",
     platform: "Twitter",
     name: "Twitter",
@@ -85,14 +62,6 @@ export const PLATFORMS: PlatformSpec[] = [
     name: "POAP",
     description: "Connect an account to a POAP owned for over 15 days.",
     connectMessage: "Connect to POAP",
-    isEVM: true,
-  },
-  {
-    icon: "./assets/brightidStampIcon.svg",
-    platform: "Brightid",
-    name: "BrightID",
-    description: "Connect your BrightID",
-    connectMessage: "Connect Account",
     isEVM: true,
   },
   {

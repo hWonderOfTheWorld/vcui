@@ -332,7 +332,7 @@ export const GenericPlatform = ({ platFormGroupSpec, platform }: PlatformProps):
     } else {
       return {
         title: "Verification Failed",
-        body: "Please make sure you fulfill the requirements for this stamp.",
+        body: "Please make sure you fulfill the requirements for this verification.",
         icon: "../../assets/verification-failed.svg",
         platformId: platform.platformId as PLATFORM_ID,
       };

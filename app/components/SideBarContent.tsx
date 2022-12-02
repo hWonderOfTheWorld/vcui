@@ -66,10 +66,10 @@ export const SideBarContent = ({
                   <img alt="Platform Image" className="h-full w-full" src={currentPlatform?.icon} />
                 </div>
                 <div className="flex flex-col items-center justify-center text-center">
-                  <h2 className="font-miriam-libre title-font mt-4 text-2xl font-medium text-gray-900">
+                  <h2 className="font-['Satoshi'] title-font mt-4 text-2xl font-medium text-gray-900">
                     {currentPlatform?.name}
                   </h2>
-                  <p className="font-miriam-libre text-base text-gray-500">{currentPlatform?.description}</p>
+                  <p className="font-['Satoshi'] text-base text-gray-500">{currentPlatform?.description}</p>
                 </div>
               </div>
             </div>

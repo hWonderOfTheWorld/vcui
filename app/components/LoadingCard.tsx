@@ -3,7 +3,7 @@ import React from "react";
 export const LoadingCard = (): JSX.Element => {
   return (
     <div className="w-1/2 p-2 md:w-1/2 xl:w-1/4" data-testid="loading-card">
-      <div className="relative flex animate-pulse flex-col border border-gray-200 p-0 xl:p-2">
+      <div className="relative flex animate-pulse flex-col border border-gray-200 rounded-lg p-0 xl:p-2">
         <div className="flex flex-row p-6">
           <div className="flex h-10 w-10 flex-grow justify-center md:justify-start">
             <div className="h-12 w-12 rounded-full bg-gray-300"></div>

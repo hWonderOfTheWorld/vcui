@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 // --Components
 import { CardList } from "../components/CardList";
 import { JsonOutputModal } from "../components/JsonOutputModal";
-import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 
 // --Chakra UI Elements
 import {
@@ -99,13 +99,8 @@ export default function Dashboard() {
 
   return (
     <>
-      <div className="invisible flex w-full flex-col flex-wrap border-b-2 p-5 md:visible md:flex-row">
-        <div className="float-right mb-4 flex h-12 flex-row items-center font-medium text-gray-900 md:mb-0">
-          <img src="/assets/gitcoinLogoDark.svg" alt="Gitcoin Logo" />
-          <img className="ml-6 mr-6" src="/assets/logoLine.svg" alt="Logo Line" />
-          <img src="/assets/passportLogoBlack.svg" alt="pPassport Logo" />
-        </div>
-      </div>
+    <Header />
+     
 
       {viewerConnection.status === "connecting" && (
         <div className="top-unset absolute z-10 my-2 h-10 w-full md:top-10">
@@ -122,21 +117,16 @@ export default function Dashboard() {
         </div>
       )}
 
-      <div className="container mx-auto flex flex-wrap-reverse px-2 md:mt-4 md:flex-wrap">
+      <div className="container mx-auto flex flex-wrap-reverse px-5 md:px-10 md:mt-4 md:flex-wrap">
         <div className="md:w-3/5">
-          <p className="mb-4 text-2xl text-black">My Stamps</p>
-          <p className="text-xl text-black">
-            Select the decentralized identity verification stamps you&apos;d like to connect to.
+          <p className="mb-4 text-2xl text-black pl-2">Verified Credentials</p>
+          <p className="text-xl text-black pl-2">
+            Select the verifications you&apos;d would like to save on your domain.
           </p>
         </div>
 
         {viewerConnection.status !== "connecting" && (
-          <div className="my-2 flex grow flex-row justify-between md:hidden">
-            <div className="float-right mb-4 flex flex-row items-center font-medium text-gray-900 md:mb-0">
-              <img src="/assets/gitcoinLogoDark.svg" alt="Gitcoin Logo" />
-              <img className="ml-6 mr-6" src="/assets/logoLine.svg" alt="Logo Line" />
-              <img src="/assets/passportLogoBlack.svg" alt="pPassport Logo" />
-            </div>
+          <div className="my-2 flex grow flex-row justify-between md:hidden hidden">
             {passport ? (
               <button
                 data-testid="button-passport-json-mobile"
@@ -168,7 +158,7 @@ export default function Dashboard() {
           {isLoadingPassport == IsLoadingPassportState.FailedToConnect && retryModal}
           {viewerConnection.status !== "connecting" &&
             (passport ? (
-              <div className="hidden md:block">
+              <div className="hidden md:hidden">
                 <button
                   data-testid="button-passport-json"
                   className="float-right rounded-md border-2 border-gray-300 py-2 px-4 text-black"
@@ -204,8 +194,6 @@ export default function Dashboard() {
           isLoadingPassport == IsLoadingPassportState.FailedToConnect
         }
       />
-      {/* This footer contains dark colored text and dark images */}
-      <Footer lightMode={false} />
     </>
   );
 }

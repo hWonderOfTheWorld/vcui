@@ -43,7 +43,7 @@ export const Card = ({
 
   return (
     <div className="w-1/2 p-2 md:w-1/2 xl:w-1/4">
-      <div className="relative border border-gray-200 p-0">
+      <div className="relative border border-gray-200 p-0 rounded-lg">
         {isLoading && (
           <div className="absolute inset-0 z-10 flex w-full flex-col items-center justify-center bg-white opacity-80">
             <Spinner

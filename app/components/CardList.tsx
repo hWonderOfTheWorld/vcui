@@ -241,7 +241,7 @@ export const CardList = ({ isLoading = false }: CardListProps): JSX.Element => {
   }, [currentPlatform]);
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto px-4 md:px-9 py-10">
       <div className="flex flex-wrap md:-m-4 md:px-4">
         {PLATFORMS.map((platform, i) => {
           return isLoading ? (
@@ -263,7 +263,7 @@ export const CardList = ({ isLoading = false }: CardListProps): JSX.Element => {
       </div>
       {/* sidebar */}
       {currentProviders && (
-        <Drawer isOpen={isOpen} placement="right" size="sm" onClose={onClose} finalFocusRef={btnRef.current}>
+        <Drawer isOpen={isOpen} placement="bottom" size="sm" onClose={onClose} finalFocusRef={btnRef.current}>
           <DrawerOverlay />
           {renderCurrentPlatformSelection()}
         </Drawer>
