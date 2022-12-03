@@ -77,7 +77,7 @@ export default function Dashboard() {
             <div className="flex flex-col" data-testid="retry-modal-content">
               <p className="text-lg font-bold">Ceramic Network Error</p>
               <p>
-                The Gitcoin Passport relies on the Ceramic Network which currently is having network issues. Please try
+                The verifiable credential system relies on the Ceramic Network which currently is having network issues. Please try
                 again later.
               </p>
             </div>
