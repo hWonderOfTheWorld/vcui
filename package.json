@@ -45,7 +45,7 @@
     "start": "concurrently --kill-others \"yarn start:iam\" \"yarn start:app\" \"yarn start:signer\"",
     "start:iam": "yarn workspace @gitcoin/passport-iam start",
     "start:signer": "yarn workspace @gitcoin/passport-signer start",
-    "start:app": "yarn workspace @gitcoin/passport-app start",
+    "start:app": "yarn workspace @gitcoin/passport-app prod-start",
     "start:ceramic": "yarn ceramic daemon",
     "prod:start:iam": "yarn workspace @gitcoin/passport-iam prod:start",
     "app": "yarn workspace @gitcoin/passport-app",
