@@ -1,0 +1,1 @@
+{"version":3,"file":"App-Bindings.js","sourceRoot":"","sources":["../../../src/ZkSync/App-Bindings.ts"],"names":[],"mappings":";;;;;;;;;;;;AACA,gDAA6C;AAC7C,MAAa,cAAe,SAAQ,mBAAQ;IAA5C;;QAEE,eAAU,GAAG,QAAQ,CAAC;IAMxB,CAAC;IAJO,kBAAkB,CAAC,UAAsB;;YAC7C,MAAM,MAAM,GAAG,MAAM,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,CAAC;YACzC,OAAO,MAAM,CAAC;QAChB,CAAC;KAAA;CACF;AARD,wCAQC"}

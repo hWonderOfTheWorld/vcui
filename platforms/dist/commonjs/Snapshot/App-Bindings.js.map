@@ -1,0 +1,1 @@
+{"version":3,"file":"App-Bindings.js","sourceRoot":"","sources":["../../../src/Snapshot/App-Bindings.ts"],"names":[],"mappings":";;;;;;;;;;;;AAGA,MAAa,gBAAgB;IAA7B;QACE,eAAU,GAAG,UAAU,CAAC;QACxB,SAAI,GAAG,UAAU,CAAC;IAMpB,CAAC;IAJO,kBAAkB,CAAC,UAAsB;;YAC7C,MAAM,MAAM,GAAG,MAAM,OAAO,CAAC,OAAO,CAAC,EAAE,CAAC,CAAC;YACzC,OAAO,MAAM,CAAC;QAChB,CAAC;KAAA;CACF;AARD,4CAQC"}
